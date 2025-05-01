@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Gothic+A1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zen+Maru+Gothic&display=swap');
+
+.zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.fa-solid:hover{
+    color: #d4af37;
+}
+
+.offcanvas-body{
+    border: #082b63 10px solid;
+}
+
+.offcanvas-header{
+    color: #d4af37;
+    background-color: #082b63;
+}
+
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+
+body{
+    font-family: "Zen Maru Gothic", serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.prod_header {
+    background-color: #082b63;
+}
+
+/* banner */
+.banner-row {
+    background-color: #082b63;
+}
+
+/* splash page */
+.splash{
+    color: #082b63;
+}
+
+/* personnel */
+.card-header {
+    background-color: #082b63;
+}
+
+
+/* navbar */
+.navbar-row {
+    background-color: #082b63;
+}
+
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    color: #d4af37;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* footer */
+footer{
+    background-color: #06101f;
+}
+
+/* cart */
+
+.cartTab{
+    position: fixed;
+    width: 400px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    background-color: #082b63;
+    color: white;
+    font-weight: 500;
+}
+
+.cartTab .btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+}
+
+.cartTab .cartList {
+    overflow: auto;
+} 
+
+.cartTab .cartList::-webkit-scrollbar{
+    width: 0;
+}
+
+.listCart {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #082b63;
+}
+
+.offcanvas-body
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.product-name {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.quantity .btn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    text-align: center;
+}
+
+.quantity-value {
+    width: 30px;
+    text-align: center;
+}
+
+.total-price {
+    flex-shrink: 0;
+    width: 80px;
+    text-align: right;
+    margin-left: 10px;
+}
+
+.item .image img {
+    width: 50px;
+    height: auto;
+}
+
+
+.item .totalPrice {
+    margin-left: auto; 
+    margin-right: 1rem; 
+    flex-shrink: 0;
+}
+
+.item .quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+
+@media screen and (min-width: 992px) {
+    .brand2{
+        display: block !important;
+    }
+    .brand1 {
+        display: none !important;
+    }
+    .cart2 {
+        display: none !important;
+    }
+    .cart1 {
+        display: flex !important;
+    }
+    .navbar-md {
+        display: flex !important;
+    }
+    .navbar-mds {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .brand1 {
+        display: block !important;
+    }
+    .brand2{
+        display: none !important;
+    }
+    .cart1 {
+        display: none!important;
+    }
+    .cart2 {
+        display: block!important;
+    }
+    .navbar-md {
+        display: none !important;
+    }
+    .navbar-mds {
+        display: flex !important;
+    }
+    .banner-row {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .banner img {
+        max-width: 50%; 
+        height: auto; 
+    }
+}
